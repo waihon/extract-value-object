@@ -37,5 +37,14 @@ describe GradeScore do
         expect(grade_score.grade).to eq('D')
       end
     end
+
+    it 'returns F for a score less than 60' do
+      scores = [0, 11, 22, 33, 44, 55, 59]
+
+      scores.each do |score|
+        grade_score = GradeScore.new(score)
+        expect(grade_score.grade).to eq('F')
+      end
+    end
   end
 end
