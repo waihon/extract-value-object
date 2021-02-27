@@ -19,5 +19,14 @@ describe GradeScore do
         expect(grade_score.grade).to eq('B')
       end
     end
+
+    it 'returns C for a score greater than or equal 70 and less than 80' do
+      scores = [70, 75, 79]
+
+      scores.each do |score|
+        grade_score = GradeScore.new(score)
+        expect(grade_score.grade).to eq('C')
+      end
+    end
   end
 end

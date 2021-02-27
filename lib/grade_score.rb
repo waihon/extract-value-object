@@ -6,7 +6,9 @@ class GradeScore
   end
 
   def grade
-    if score < 90
+    if score < 80
+      'C'
+    elsif score < 90
       'B'
     else
       'A'
