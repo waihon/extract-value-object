@@ -10,7 +10,7 @@ class ReportCard
 
   def grade_scores
     @scores.map do |score|
-      Grade.new(score).grade 
+      Grade.new(score).letter
     end
   end
 end

@@ -5,7 +5,7 @@ class Grade
     @score = score
   end
 
-  def grade
+  def letter
     if score < 60
       'F'
     elsif score < 70

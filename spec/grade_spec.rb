@@ -7,7 +7,7 @@ describe Grade do
 
       scores.each do |score|
         grade = Grade.new(score)
-        expect(grade.grade).to eq('A')
+        expect(grade.letter).to eq('A')
       end
     end
 
@@ -16,7 +16,7 @@ describe Grade do
 
       scores.each do |score|
         grade = Grade.new(score)
-        expect(grade.grade).to eq('B')
+        expect(grade.letter).to eq('B')
       end
     end
 
@@ -25,7 +25,7 @@ describe Grade do
 
       scores.each do |score|
         grade = Grade.new(score)
-        expect(grade.grade).to eq('C')
+        expect(grade.letter).to eq('C')
       end
     end
 
@@ -34,7 +34,7 @@ describe Grade do
 
       scores.each do |score|
         grade = Grade.new(score)
-        expect(grade.grade).to eq('D')
+        expect(grade.letter).to eq('D')
       end
     end
 
@@ -43,7 +43,7 @@ describe Grade do
 
       scores.each do |score|
         grade = Grade.new(score)
-        expect(grade.grade).to eq('F')
+        expect(grade.letter).to eq('F')
       end
     end
   end
