@@ -1,4 +1,4 @@
-class GradeScore
+class Grade
   attr_reader :score
 
   def initialize(score)

@@ -1,13 +1,13 @@
 require "spec_helper"
 
-describe GradeScore do
+describe Grade do
   describe "#grade" do
     it 'returns A for a score 90 or greater' do
       scores = [90, 93, 100]
 
       scores.each do |score|
-        grade_score = GradeScore.new(score)
-        expect(grade_score.grade).to eq('A')
+        grade = Grade.new(score)
+        expect(grade.grade).to eq('A')
       end
     end
 
@@ -15,8 +15,8 @@ describe GradeScore do
       scores = [80, 83, 89]
 
       scores.each do |score|
-        grade_score = GradeScore.new(score)
-        expect(grade_score.grade).to eq('B')
+        grade = Grade.new(score)
+        expect(grade.grade).to eq('B')
       end
     end
 
@@ -24,8 +24,8 @@ describe GradeScore do
       scores = [70, 75, 79]
 
       scores.each do |score|
-        grade_score = GradeScore.new(score)
-        expect(grade_score.grade).to eq('C')
+        grade = Grade.new(score)
+        expect(grade.grade).to eq('C')
       end
     end
 
@@ -33,8 +33,8 @@ describe GradeScore do
       scores = [60, 63, 69]
 
       scores.each do |score|
-        grade_score = GradeScore.new(score)
-        expect(grade_score.grade).to eq('D')
+        grade = Grade.new(score)
+        expect(grade.grade).to eq('D')
       end
     end
 
@@ -42,8 +42,8 @@ describe GradeScore do
       scores = [0, 11, 22, 33, 44, 55, 59]
 
       scores.each do |score|
-        grade_score = GradeScore.new(score)
-        expect(grade_score.grade).to eq('F')
+        grade = Grade.new(score)
+        expect(grade.grade).to eq('F')
       end
     end
   end
